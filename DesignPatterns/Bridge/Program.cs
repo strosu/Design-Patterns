@@ -11,7 +11,7 @@ namespace Bridge
         {
             IList<Manuscript> documents = new List<Manuscript>();
 
-            var faq = new FAQ()
+            var faq = new FAQ(new RegularFormatter())
             {
                 Title = "faqTitle"
             };
@@ -21,7 +21,7 @@ namespace Bridge
 
             documents.Add(faq);
 
-            var book = new Book
+            var book = new Book(new RegularFormatter())
             {
                 Text = "bookText",
                 Title = "bookTitle",
@@ -30,7 +30,7 @@ namespace Bridge
 
             documents.Add(book);
 
-            var paper = new TermPaper
+            var paper = new TermPaper(new RegularFormatter())
             {
                 Text = "paperText",
                 References = "paperReferences",

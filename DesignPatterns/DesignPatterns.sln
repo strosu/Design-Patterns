@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{0C0181F2-94D7-4324-B579-3B594DAC27FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{0C0181F2-94D7-4324-B579-3B594DAC27FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfCommand", "ChainOfCommand\ChainOfCommand.csproj", "{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0C0181F2-94D7-4324-B579-3B594DAC27FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C0181F2-94D7-4324-B579-3B594DAC27FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C0181F2-94D7-4324-B579-3B594DAC27FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
