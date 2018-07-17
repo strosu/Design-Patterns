@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{0C0181F2-94D7-4324-B579-3B594DAC27FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfCommand", "ChainOfCommand\ChainOfCommand.csproj", "{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfCommand", "ChainOfCommand\ChainOfCommand.csproj", "{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
