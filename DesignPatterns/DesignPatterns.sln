@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfCommand", "ChainOfCommand\ChainOfCommand.csproj", "{5F38FE8F-A495-4E7D-A4E8-B5B7131127A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Command\Command.csproj", "{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
