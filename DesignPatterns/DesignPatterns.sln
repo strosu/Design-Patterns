@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfCommand", "ChainOfCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Command\Command.csproj", "{8F59BCEF-5267-4C7F-A4EE-0E8A04BE10D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FFDE51B-7DCA-4C15-9612-BAB446FB92DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
