@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Comp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{0F3FA70A-6B78-4FB7-B16E-4FC9CFDC9AC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C36B12C4-CFE7-4CC0-81B5-DABB01170CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F3FA70A-6B78-4FB7-B16E-4FC9CFDC9AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3FA70A-6B78-4FB7-B16E-4FC9CFDC9AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3FA70A-6B78-4FB7-B16E-4FC9CFDC9AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3FA70A-6B78-4FB7-B16E-4FC9CFDC9AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
