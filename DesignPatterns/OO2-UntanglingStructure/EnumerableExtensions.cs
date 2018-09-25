@@ -11,9 +11,9 @@ namespace OO2_UntanglingStructure
             where T : class
         {
             return sequence
-                .Aggregate(
-                    default(T), 
-                    (best, cur) => best == null || criteria(best).CompareTo(criteria(cur)) > 0 ? cur : best);
+                .Select(obj => new Tuple<T, TKey>(obj, criteria(obj)))
+                .Aggregate((Tuple<T, TKey>)null, (best, cur) => best == null || cur.Item2.CompareTo(best.Item2) < 0 ? cur : best)
+                .Item1;
         }
     }
 }
