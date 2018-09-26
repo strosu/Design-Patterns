@@ -42,18 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompositePainterFactories.cs" />
+    <Compile Include="Painters\CombiningPainter.cs" />
+    <Compile Include="Painters\CompositePainterFactories.cs" />
     <Compile Include="EnumerableExtensions.cs" />
-    <Compile Include="IPainter.cs" />
-    <Compile Include="Painter.cs" />
-    <Compile Include="Painters.cs" />
-    <Compile Include="CompositePainter.cs" />
+    <Compile Include="Painters\IPainter.cs" />
+    <Compile Include="Painters\Painter.cs" />
+    <Compile Include="Painters\Painters.cs" />
+    <Compile Include="Painters\CompositePainter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProportionalPainter.cs" />
+    <Compile Include="Painters\ProportionalPainter.cs" />
+    <Compile Include="Strategy\IPaintingScheduler.cs" />
+    <Compile Include="Strategy\ProportionalPaintingScheduler.cs" />
+    <Compile Include="Strategy\PaintingTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

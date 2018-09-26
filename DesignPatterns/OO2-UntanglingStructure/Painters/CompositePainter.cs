@@ -7,12 +7,16 @@ namespace OO2_UntanglingStructure
     public class CompositePainter<TPainter> : IPainter
         where TPainter : IPainter
     {
-        private readonly Func<double, IEnumerable<TPainter>, IPainter> _reduce;
+        public Func<double, IEnumerable<TPainter>, IPainter> Reduce;
         private readonly IEnumerable<TPainter> _painters;
 
-        public CompositePainter(IEnumerable<TPainter> painters, Func<double, IEnumerable<TPainter>, IPainter> reduce)
+        public CompositePainter(IEnumerable<TPainter> painters, Func<double, IEnumerable<TPainter>, IPainter> reduce) : this(painters)
         {
-            _reduce = reduce;
+            Reduce = reduce;
+        }
+
+        public CompositePainter(IEnumerable<TPainter> painters)
+        {
             _painters = painters.ToList();
         }
 
@@ -23,9 +27,9 @@ namespace OO2_UntanglingStructure
         }
 
         public double EstimateCompensation(double sqMeters) =>
-            _reduce(sqMeters, _painters).EstimateCompensation(sqMeters);
+            Reduce(sqMeters, _painters).EstimateCompensation(sqMeters);
 
         public TimeSpan EstimateTimeToPaint(double sqMeters) =>
-            _reduce(sqMeters, _painters).EstimateTimeToPaint(sqMeters);
+            Reduce(sqMeters, _painters).EstimateTimeToPaint(sqMeters);
     }
 }

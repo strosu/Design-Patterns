@@ -15,7 +15,7 @@ namespace OO2_UntanglingStructure
             var cheapestPainter = CompositePainterFactories.CreateCheapestSelector(painters);
             Console.WriteLine(cheapestPainter.EstimateCompensation(1.0));
 
-            var group = CompositePainterFactories.CreateGroup(painters);
+            var group = CompositePainterFactories.CombineProportional(painters);
             Console.WriteLine(group.EstimateCompensation(1.0));
 
             Console.ReadLine();
