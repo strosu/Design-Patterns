@@ -1,4 +1,5 @@
 ﻿using System;
+using OO___Nulls.Common;
 
 namespace OO___Nulls
 {
@@ -31,6 +32,19 @@ namespace OO___Nulls
             var longWarranty = new LifeTimeWarranty(sellingDate);
             var article3 = new SoldArticle(longWarranty, VoidWarranty.Instance);
             ClaimWarranty(article3);
+
+            var some = Option<string>.Some("somevalue");
+            some
+                .When(x => x.Length > 3).Do(s => Console.WriteLine($"{s} long"))
+                .WhenSome().Do(s => Console.WriteLine($"{s} short"))
+                .WhenNone(() => Console.WriteLine("missing"))
+                .Execute();
+
+            string label =
+                some.When(s => s.Length > 3).MapTo(s => s.Substring(0, 3) + ".")
+                    .WhenSome().MapTo(s => s)
+                    .WhenNone().MapTo("<empty>")
+                    .Map();
 
             Console.ReadLine();
         }

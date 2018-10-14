@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using OO___Nulls.Common;
 
 namespace OO___Nulls
 {
@@ -10,7 +13,7 @@ namespace OO___Nulls
 
         private readonly Warranty _notOperationalWarranty;
 
-        private Part _circuit;
+        private Option<Part> _circuits = Option<Part>.None();
         private Warranty _circuitExtendedWarranty;
         private Warranty _failedCircuitWarranty;
 
@@ -35,19 +38,22 @@ namespace OO___Nulls
 
         public void InstallCircuit(Part circuit, Warranty extendedWarranty)
         {
-            _circuit = circuit;
+            _circuits = Option<Part>.Some(circuit);
             _failedCircuitWarranty = extendedWarranty;
         }
 
         public void CircuitNotOperational(DateTime breakDate)
         {
-            _circuit.MarkDefective(breakDate);
-            _circuitExtendedWarranty = _failedCircuitWarranty;
+            _circuits.Do(circuit =>
+            {
+                circuit.MarkDefective(breakDate);
+                _circuitExtendedWarranty = _failedCircuitWarranty;
+            });
         }
 
         public void ClaimCircuitWarranty(Action onValidClaim)
         {
-            _circuitExtendedWarranty.Claim(_circuit.BreakDate, onValidClaim);
+            _circuits.Do(circuit => _circuitExtendedWarranty.Claim(circuit.BreakDate, onValidClaim));
         }
     }
 }
