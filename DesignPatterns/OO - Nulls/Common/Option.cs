@@ -21,9 +21,9 @@ namespace OO___Nulls.Common
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-        public Option<T> When(Func<T, T> filter)
-        {
+        //public Option<T> When(Func<T, T> filter)
+        //{
 
-        }
+        //}
     }
 }

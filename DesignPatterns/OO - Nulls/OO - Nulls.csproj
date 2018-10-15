@@ -45,6 +45,8 @@
     <Compile Include="Common\EnumerableExtensions.cs" />
     <Compile Include="Common\Option.cs" />
     <Compile Include="Part.cs" />
+    <Compile Include="SoldArticle1.cs" />
+    <Compile Include="SoldArticle2.cs" />
     <Compile Include="Warranty.cs" />
     <Compile Include="LifeTimeWarranty.cs" />
     <Compile Include="Program.cs" />
