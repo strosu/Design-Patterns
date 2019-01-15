@@ -1,9 +1,8 @@
 ﻿using OO___Nulls.Common;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 
-namespace OO___Nulls
+namespace OO___Nulls 
 {
     public class SoldArticle2
     {
@@ -13,7 +12,7 @@ namespace OO___Nulls
         private Warranty _circuitWarranty;
 
         private DeviceStatus _operationalStatus;
-        private IReadOnlyDictionary<DeviceStatus, Action<Action>> _warrantyMap = new ConcurrentDictionary<DeviceStatus, Action<Action>>();
+        private readonly IReadOnlyDictionary<DeviceStatus, Action<Action>> _warrantyMap;
 
         public SoldArticle2(Warranty moneyBackGuarantee, Warranty express)
         {
@@ -21,6 +20,7 @@ namespace OO___Nulls
             _notOperationalWarranty = express ?? throw new ArgumentNullException(nameof(express));
             _circuitWarranty = VoidWarranty.Instance;
             _operationalStatus = DeviceStatus.AllFine();
+            _warrantyMap = InitializeWarrantyMap();
         }
 
         public void InstallCircuit(Part circuit, Warranty extendedWarranty)
@@ -58,9 +58,15 @@ namespace OO___Nulls
         {
             _warrantyMap[_operationalStatus].Invoke(onValidClaim);
         }
+
+        private IReadOnlyDictionary<DeviceStatus, Action<Action>> InitializeWarrantyMap()
+            => new Dictionary<DeviceStatus, Action<Action>>()
+            {
+                [DeviceStatus.AllFine().NotOperational()] = ClaimWarranty
+            };
     }
 
-    public class DeviceStatus
+    sealed class DeviceStatus : IEquatable<DeviceStatus>
     {
         private readonly StatusRepresentation _representation;
 
@@ -89,5 +95,24 @@ namespace OO___Nulls
         public DeviceStatus CircuitNotOperational() => new DeviceStatus(_representation | StatusRepresentation.CircuitFailed);
 
         public DeviceStatus CircuitRepaired() => new DeviceStatus(_representation & ~StatusRepresentation.CircuitFailed);
+
+        public bool Equals(DeviceStatus other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return _representation == other._representation;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            return obj is DeviceStatus other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return (int) _representation;
+        }
     }
 }

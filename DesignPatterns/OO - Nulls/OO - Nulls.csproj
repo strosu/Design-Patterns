@@ -47,6 +47,18 @@
     <Compile Include="Part.cs" />
     <Compile Include="SoldArticle1.cs" />
     <Compile Include="SoldArticle2.cs" />
+    <Compile Include="Third\DefaultRules.cs" />
+    <Compile Include="Third\EasterRules.cs" />
+    <Compile Include="Third\Rules\ChainedRule.cs" />
+    <Compile Include="Third\Rules\CircuitryRule.cs" />
+    <Compile Include="Third\Rules\ConditionalRule.cs" />
+    <Compile Include="Third\Rules\IWarrantyRules.cs" />
+    <Compile Include="Third\IWarrantyRulesFactory.cs" />
+    <Compile Include="Third\Rules\MoneyBackRule.cs" />
+    <Compile Include="Third\Rules\NotOperationalRule.cs" />
+    <Compile Include="Third\Rules\NotSatisfiedRule.cs" />
+    <Compile Include="Third\XmasRules.cs" />
+    <Compile Include="Third\SoldArticle3.cs" />
     <Compile Include="Warranty.cs" />
     <Compile Include="LifeTimeWarranty.cs" />
     <Compile Include="Program.cs" />
@@ -58,5 +70,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
