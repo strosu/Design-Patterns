@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Various", "Various", "{3F1B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTable", "VTable\VTable.csproj", "{D9641158-7B61-45F1-866A-17D6BF3AFE28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monads", "Monads\Monads.csproj", "{B52960BE-C28C-44BD-A582-85919FA75641}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,12 +85,17 @@ Global
 		{D9641158-7B61-45F1-866A-17D6BF3AFE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9641158-7B61-45F1-866A-17D6BF3AFE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9641158-7B61-45F1-866A-17D6BF3AFE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52960BE-C28C-44BD-A582-85919FA75641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52960BE-C28C-44BD-A582-85919FA75641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52960BE-C28C-44BD-A582-85919FA75641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52960BE-C28C-44BD-A582-85919FA75641}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D9641158-7B61-45F1-866A-17D6BF3AFE28} = {3F1B23DC-04FC-4184-812A-9261E17D13B8}
+		{B52960BE-C28C-44BD-A582-85919FA75641} = {3F1B23DC-04FC-4184-812A-9261E17D13B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E4410F7-E6EA-42AE-BF38-628AC669916A}
