@@ -57,6 +57,15 @@ namespace VTable
             animal2.VTable.Complain(animal2);
             animal2.VTable.MakeNoise(animal2);
 
+            Console.WriteLine("multiple");
+
+            StaticBrownGiraffe bg = StaticBrownGiraffe.Create();
+            StaticAnimal ag = (StaticAnimal) bg;
+            StaticGiraffe sg = (StaticGiraffe) bg;
+            StaticBrownGiraffe.ComplainMethod(bg);
+            ag.VTable.Complain(bg);
+            sg.VTable.Complain(bg);
+
             Console.ReadLine();
         }
     }

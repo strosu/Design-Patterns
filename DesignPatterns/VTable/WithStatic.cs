@@ -30,7 +30,7 @@ namespace VTable
 
         public bool Sore { get; set; }
 
-        private static void ComplainMethod(StaticAnimal animal)
+        protected static void ComplainMethod(StaticAnimal animal)
         {
             var tmp = (animal as StaticGiraffe).Sore ? "Blah" : "All good";
             Console.WriteLine(tmp);
@@ -41,6 +41,22 @@ namespace VTable
             var giraffe = new StaticGiraffe {VTable = GiraffeVTable};
 
             return giraffe;
+        }
+    }
+
+    public class StaticBrownGiraffe : StaticGiraffe
+    {
+        private static readonly VTable BrownGiraffe = new VTable(StaticGiraffe.ComplainMethod, StaticAnimal.MakeNoiseMethod);
+
+        public static StaticBrownGiraffe Create()
+        {
+            var giraffe = new StaticBrownGiraffe {VTable = BrownGiraffe};
+            return giraffe;
+        }
+
+        public static void ComplainMethod(StaticBrownGiraffe bg)
+        {
+            Console.WriteLine("BROWN");
         }
     }
 
