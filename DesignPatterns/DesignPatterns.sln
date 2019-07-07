@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29009.5
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{0C0181F2-94D7-4324-B579-3B594DAC27FC}"
 EndProject
@@ -39,7 +39,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Async", "Async", "{290E505D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async", "Async\Async\Async.csproj", "{59D1C368-9348-468A-AADB-ED26EC4D89D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCompletionSource", "Async\TaskCompletionSource\TaskCompletionSource.csproj", "{069056FC-6947-437C-8578-51B8326DB8E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskCompletionSource", "Async\TaskCompletionSource\TaskCompletionSource.csproj", "{069056FC-6947-437C-8578-51B8326DB8E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanCode", "CleanCode", "{84773A35-CC86-4533-A673-1178578CD6C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{45E96EBE-4F95-468A-ADD8-BEA72603FFFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +119,10 @@ Global
 		{069056FC-6947-437C-8578-51B8326DB8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{069056FC-6947-437C-8578-51B8326DB8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{069056FC-6947-437C-8578-51B8326DB8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E96EBE-4F95-468A-ADD8-BEA72603FFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E96EBE-4F95-468A-ADD8-BEA72603FFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E96EBE-4F95-468A-ADD8-BEA72603FFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E96EBE-4F95-468A-ADD8-BEA72603FFFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +135,8 @@ Global
 		{290E505D-B206-4BA2-8CD7-EB26F10AABE9} = {3F1B23DC-04FC-4184-812A-9261E17D13B8}
 		{59D1C368-9348-468A-AADB-ED26EC4D89D0} = {290E505D-B206-4BA2-8CD7-EB26F10AABE9}
 		{069056FC-6947-437C-8578-51B8326DB8E1} = {290E505D-B206-4BA2-8CD7-EB26F10AABE9}
+		{84773A35-CC86-4533-A673-1178578CD6C6} = {3F1B23DC-04FC-4184-812A-9261E17D13B8}
+		{45E96EBE-4F95-468A-ADD8-BEA72603FFFF} = {84773A35-CC86-4533-A673-1178578CD6C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E4410F7-E6EA-42AE-BF38-628AC669916A}
